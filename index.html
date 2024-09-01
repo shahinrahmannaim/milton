@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechWorld</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'hero-section': '#2f40ac',
+                        'body': '#47476a',
+                    },
+                    backgroundImage: {
+                        'hero-pattern': "url('./images/web-dev.png')",
+                        'hero2': "url('./images/hero2-bg.png')",
+
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="text-gray-900 bg-body font-serif">
+    <header class="md:container mx-auto">
+        <nav>
+            <div class="navbar bg-base-100">
+               
+
+
+                <div class="flex-1">
+
+                    <a class="btn btn-accent  text-xl text-white">TechWorld</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Product</a></li>
+                        <li><a>Solutions</a></li>
+                        <li> <a href="">Blog</a></li>
+                        <li><a>Contact</a></li>
+                        <li> <a class="font-semibold  ">Login</a></li>
+                    </ul>
+                </div>
+                <div class="md:block hidden ">
+                    <a class="btn  btn-accent ">Get Started</a>
+
+                </div>
+                <div class="dropdown ">
+                    <div tabindex="0" role="button" class="md:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+
+                </div>
+            </div>
+        </nav>  
+    </header>
+    <main class="md:container mx-auto">
+        <!-- hero section -->
+        <div class=" relative  h-auto rounded w-full bg-cover text-center">
+            <div class="absolute inset-0 bg-hero2 bg-cover bg-center opacity-50 rounded"></div>
+            <div class="relative z-10 p-10">
+                <h1 class="text-white text-xl md:text-5xl  font-bold">Create a website without limits <br>With us</h1>
+        
+                <div class="flex flex-col md:flex-row items-center justify-center mt-8">
+                    <div class="-ml-24">
+                        <p class="text-gray-100 w-3/6 mx-auto">
+                            Build and scale with confidence. From a powerful website builder to advanced business solutions—we’ve got you covered.
+                        </p>
+                        <br>
+                        <button><a class="btn btn-white">Get Started</a></button>
+                    </div>
+                    <div class="bg-hero-pattern bg-cover  size-96 -ml-32 mr-24"></div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- main content -->
+        <section class="py-8 lg:py-24">
+            <!-- Title -->
+            <div class="text-center mb-8">
+              <h1 class="text-3xl md:text-4xl font-bold text-white mb-5">
+                Our Featured Products
+              </h1>
+              <p class="text-gray-100  max-w-xl mx-auto">
+                There are many variations of passages of Lorem Ipsum available, but
+                the majority have suffered alteration in some form, by injected
+                humour, or randomised words which don't look even slightly
+                believable.
+              </p>
+            </div>
+            <!-- Grid Cards -->
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center"
+            >
+              <!-- Product Card -->
+              <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+                <img class="mx-auto pt-4" src="./images/Group.png" alt="" />
+                <div class="p-4">
+                  <h2 class="font-bold text-xl">Web Design</h2>
+                  <p class="text-gray-600">
+                    We place your users at the heart of the design process. By understanding their needs and behaviors,
+                  </p>
+                </div>
+              </div>
+              <!-- Product Card -->
+              <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+                <img class="mx-auto pt-4" src="./images/Group.png" alt="" />
+                <div class="p-4">
+                  <h2 class="font-bold text-xl">Web Development</h2>
+                  <p class="text-gray-600">
+                    We place your users at the heart of the design process. By understanding their needs and behaviors,
+                  </p>
+                </div>
+              </div>
+              <!-- Product Card -->
+              <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+                <img class="mx-auto pt-4" src="./images/Group.png" alt="" />
+                <div class="p-4">
+                  <h2 class="font-bold text-xl">UI/UX Design</h2>
+                  <p class="text-gray-600">
+                    We place your users at the heart of the design process. By understanding their needs and behaviors,
+                  </p>
+                </div>
+              </div>
+              <!-- Product Card -->
+              <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+                <img class="mx-auto pt-4" src="./images/Group.png" alt="" />
+                <div class="p-4">
+                  <h2 class="font-bold text-xl">Custom Web Design</h2>
+                  <p class="text-gray-600">
+                    We place your users at the heart of the design process. By understanding their needs and behaviors,
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+    
+          <!-- Great Tea Section -->
+          <section class="mb-24">
+            <div class="grid grid-cols-1 lg:grid-cols-2">
+              <!-- Image Section -->
+              <div class="grid grid-cols-2 grid-rows-3 gap-4 lg:w-5/6">
+                <div
+                  class="h-38 bg-gradient-to-r from-red-100 to-red-50 rounded-xl"
+                ></div>
+                <div class="bg-orange-50 rounded-xl row-span-2">
+                  <img class="mx-auto my-5" src="./images/group3.png" alt="" />
+                </div>
+                <div class="bg-stone-100 rounded-xl row-span-2">
+                  <img class="mx-auto my-5" src="./images/group3.png" alt="" />
+                </div>
+                <div
+                  class="h-38 bg-gradient-to-r from-stone-200 to-stone-100 rounded-xl"
+                ></div>
+              </div>
+              <!-- Text Section -->
+              <div>
+                <h1 class="text-5xl text-gray-100 font-bold mb-5">
+                    Brand Integration
+                </h1>
+                <p class="text-gray-100">
+                    We seamlessly integrate your brand’s colors, typography, and overall identity into the design, ensuring consistency across all your digital platforms.
+                </p>
+                <br />
+                <h1 class="text-2xl text-gray-100 font-bold mb-5">Unique Taste</h1>
+                <p class="text-gray-100">
+                  A Unique and different style from other teapots gives a luxurious
+                  and minimalist impression
+                </p>
+                <br />
+                <h1 class="text-2xl text-gray-100 font-bold mb-5">Premium Quality</h1>
+                <p class="text-gray-100">
+                  Premium Quality that makes tea more elegant and more durable when
+                  you use it.
+                </p>
+              </div>
+            </div>
+          </section>
+    
+          <!-- Reviews Section -->
+          <section class="mb-24">
+            <div
+              class="bg-gradient-to-r from-orange-500 to-red-500 rounded-xl grid grid-cols-1 lg:grid-cols-2 text-white px-7 md:px-16"
+            >
+              <!-- Text Section -->
+              <div class="flex justify-center items-center overflow-hidden">
+                <div class="w-5/6">
+                  <h1 class="text-5xl font-bold mb-5 mt-10">
+                    Meet Our Super Clients
+                  </h1>
+                  <p class="mb-5">
+                    There are many variations of passages of Lorem Ipsum available,
+                    but the majority have suffered alteration in some form, by
+                    injected humour, or randomised words which don't look even
+                    slightly believable.
+                  </p>
+                  <button class="bg-white text-orange-700 px-3 py-2 rounded-lg">
+                    Show All
+                  </button>
+                </div>
+              </div>
+    
+              <!-- Reviews Card Section -->
+              <div class="relative py-24">
+                <!-- Middle Card -->
+                <div class="absolute z-10 top-44 md:top-52">
+                  <div
+                    class="h-56 w-full md:w-3/4 bg-white text-black rounded-lg flex items-center px-5"
+                  >
+                    <div class="absolute -top-5 -left-5 bg-white rounded-full">
+                      <img class="p-1" src="./images/client.png" alt="" />
+                    </div>
+                    <div>
+                      <p class="text-gray-500 mb-5">
+                        We are providing the best and suitable home insurance
+                        services for the people who are interested to treatment
+                      </p>
+                      <h1 class="font-bold">Ilham Yuda</h1>
+                      <small class="font-bold text-gray-500">Businessman</small>
+                    </div>
+                  </div>
+                </div>
+    
+                <!-- top card -->
+                <div
+                  class="relative left-8 md:left-32 h-56 w-full md:w-3/4 bg-white text-black rounded-lg flex items-center px-5 opacity-40"
+                >
+                  <div class="absolute -top-5 -left-5 bg-white rounded-full">
+                    <img class="p-1" src="./images/client.png" alt="" />
+                  </div>
+                  <div>
+                    <p class="text-gray-500 mb-5">
+                      We are providing the best and suitable home insurance services
+                      for the people who are interested to treatment
+                    </p>
+                    <h1 class="font-bold">Ilham Yuda</h1>
+                    <small class="font-bold text-gray-500">Businessman</small>
+                  </div>
+                </div>
+    
+                <!-- bottom card -->
+                <div
+                  class="relative left-8 md:left-32 top-10 h-56 w-full md:w-3/4 bg-white text-black rounded-lg flex items-center px-5 opacity-40"
+                >
+                  <div class="absolute -top-5 -left-5 bg-white rounded-full">
+                    <img class="p-1" src="./images/client.png" alt="" />
+                  </div>
+                  <div>
+                    <p class="text-gray-500 mb-5">
+                      We are providing the best and suitable home insurance services
+                      for the people who are interested to treatment
+                    </p>
+                    <h1 class="font-bold">Ilham Yuda</h1>
+                    <small class="font-bold text-gray-500">Businessman</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+    
+          <!-- News Section Homwork -->
+        </main>
+        <!-- Footer Section -->
+        <footer class="bg-orange-100 text-gray-700 py-10 px-4 md:px-16">
+          <div class="w-9/12 mx-auto">
+            <!-- Logo -->
+            <div class="mb-8 flex justify-between">
+              <img class="mb-8" src="./images/cup.png" alt="" />
+              <div class="flex items-center gap-2">
+                <h4>Ready to get started?</h4>
+                <button
+                  class="bg-gradient-to-r from-orange-500 to-red-500 px-3 py-2 rounded-lg text-white font-bold"
+                >
+                  Get Started
+                </button>
+              </div>
+            </div>
+            <!-- Links -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+              <!-- first column -->
+              <div>
+                <h3 class="font-semibold text-lg mb-3">Quick Links</h3>
+                <ul class="space-y-2">
+                  <li>
+                    <a class="hover:text-orange-600" href="#">Home</a>
+                  </li>
+                  <li>
+                    <a class="hover:text-orange-600" href="#">Insurance</a>
+                  </li>
+                  <li>
+                    <a class="hover:text-orange-600" href="#">About</a>
+                  </li>
+                  <li>
+                    <a class="hover:text-orange-600" href="#">Privacy Policy</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- second column -->
+              <div>
+                <h3 class="font-semibold text-lg mb-3">Our Services</h3>
+                <ul class="space-y-2">
+                  <li>
+                    <a class="hover:text-orange-600" href="#">Insurance</a>
+                  </li>
+                  <li>
+                    <a class="hover:text-orange-600" href="#">About</a>
+                  </li>
+                  <li>
+                    <a class="hover:text-orange-600" href="#">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a class="hover:text-orange-600" href="#">Privacy Policy</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- third column -->
+              <div>
+                <h3 class="font-semibold text-lg mb-3">Help</h3>
+                <ul class="space-y-2">
+                  <li>
+                    <a class="hover:text-orange-600" href="#">Home</a>
+                  </li>
+                  <li>
+                    <a class="hover:text-orange-600" href="#">Insurance</a>
+                  </li>
+                </ul>
+              </div>
+    
+              <!-- fourth column -->
+              <div>
+                <h3 class="font-semibold text-lg mb-3">
+                  Subscribe to our newsletter
+                </h3>
+                <div class="flex flex-col space-y-2">
+                  <div>
+                    <input
+                      placeholder="Email Address"
+                      type="text"
+                      class="bg-transparent border-b-2 border-black w-4/6"
+                    />
+                    <i
+                      class="fa-solid fa-chevron-right w-7 h-7 bg-orange-600 inline-flex rounded-full text-white justify-center items-center"
+                    ></i>
+                    <div class="flex justify-between w-2/5 mb-2 mt-8">
+                      <i class="fa-brands fa-facebook"></i>
+                      <i class="fa-brands fa-square-instagram"></i>
+                      <i class="fa-brands fa-square-twitter"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center pt-4 mt-4">
+              <p class="text-sm text-gray-600">
+                © 2027 UIDesign.to - All rights reserved.
+              </p>
+            </div>
+          </div>
+        </footer>
+      </body>
+    </html>
+    
+       
+   
